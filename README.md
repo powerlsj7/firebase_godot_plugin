@@ -1,3 +1,12 @@
+#알아둘 것
+구글서비스제이슨 파일은 밑에 buildscript 명령어와 apply 라이브러리 명령어로 처음과 끝에 작성해야하고
+aar은 각각 경로 설정해주어야함.
+이미 이 개발자가 고맙게 만들어줌.
+집에서 이 플러그인 말고 혼자만든 aar사용으로 테스트해보고 잘되는것 확인.
+
+
+
+
 <p align="center">
     <a href="https://github.com/godot-x/firebase" target="_blank" rel="noopener noreferrer">
         <img width="300" src="extras/images/logo.png" alt="Firebase - Logo">
