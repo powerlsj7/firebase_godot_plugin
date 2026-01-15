@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.library") version "8.2.2"
-    id("org.jetbrains.kotlin.android") version "2.1.0"
+    id("com.android.library") version "8.13.2"
+    id("org.jetbrains.kotlin.android") version "2.3.0"
 }
 
 android {
@@ -9,6 +9,7 @@ android {
 
     defaultConfig {
         minSdk = 21
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -22,14 +23,16 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    kotlinOptions {
-        jvmTarget = "11"
+    kotlin {
+        compilerOptions {
+            jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11
+        }
     }
 }
 
 dependencies {
-    compileOnly("org.godotengine:godot:4.2.2.stable")
-    
+    compileOnly("org.godotengine:godot:4.5.1.stable")
+
     // Firebase Analytics
     implementation("com.google.firebase:firebase-analytics:23.0.0")
 }
